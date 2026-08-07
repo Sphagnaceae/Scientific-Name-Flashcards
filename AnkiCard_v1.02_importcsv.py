@@ -25,17 +25,13 @@ import csv
 
 #nicely formatted csv path is C:\Users\kikir\OneDrive\Documents\WeedID.csv
 #other, raw csv path is C:\Users\kikir\Downloads\Plant ID Study Checklist - Weeds.csv
+
 with open(fr'{csv_path_input}', newline='') as csvfile, open(txt_output + '.txt', "w") as txt_output_file:
     #reader = csv.DictReader(csvfile, fieldnames=["Family","Latin name","Common Name","Main Testable","Plant","Lab"],dialect='excel', delimiter=',', quotechar='|')
     reader = csv.reader(csvfile)
     total_line_count = 0
     processed_line_count = 0
     txt_output_file.write("#separator:Comma\n#html:true\n#notetype:Basic (type in the answer)\n#tags column:3\n")
-        #__________________________________
-    #def scribe(inscribed_output_text):
-        #txt_output_file.write(inscribed_output_text)
-       # print(inscribed_output_text) #----------------------------------------
-        #---------------------------Offending section has been delineated. I also indented the stuff below this.
     for row in reader:
         #print(f"is_header = {is_header}, total={total_line_count}, processed={processed_line_count}")
         if row[0] == '':
@@ -80,22 +76,3 @@ with open(fr'{csv_path_input}', newline='') as csvfile, open(txt_output + '.txt'
 
 print(f"\nProcessed {processed_line_count} rows of data\nTo use your flashcards, import {txt_output}.txt into Anki")
 #print(total_line_count)
-
-
-#I'm basically defining fieldnames right here they do not need to be the same as the first ones in the file
-
-#IT WORKS It's the stupid r that I need to put in front of the raw string, and now it can find it.
-#class csv.DictReader(f, fieldnames=None, restkey=None, restval=None, dialect='excel', *args, **kwds)
-    #Create an object that operates like a regular reader but maps the information in each row to a dict
-    #whose keys are given by the optional fieldnames parameter.
-
-    #The fieldnames parameter is a sequence. If fieldnames is omitted, the values in the
-    #first row of file f will be used as the fieldnames and will be omitted from the results.
-    #If fieldnames is provided, they will be used and the first row will be included in the results.
-    #Regardless of how the fieldnames are determined, the dictionary preserves their original ordering.
-
-    #If a row has more fields than fieldnames, the remaining data is put in a list and stored with the
-    #fieldname specified by restkey (which defaults to None). If a non-blank row has fewer fields than
-    #fieldnames, the missing values are filled-in with the value of restval (which defaults to None).
-
-    #All other optional or keyword arguments are passed to the underlying reader instance.
