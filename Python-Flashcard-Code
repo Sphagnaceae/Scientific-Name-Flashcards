@@ -1,3 +1,7 @@
+#This code requires a spreadsheet (.csv) input of common names, latin names, and family names, and produces an output .txt file
+#The output file can then be read into Anki (a lovely flashcard app), where it functions as type-in-the-answer fill in the blank cards. 
+#Or, it can make normal cards if you change the settings when importing, but I find that the typed answer cards work really well in this case. 
+
 #various user interface things are in this section--------------
 
 csv_path_input = input('Please paste the complete path of your .csv file:')
