@@ -1,13 +1,10 @@
-#this code makes Anki flashcards from a csv input. This is the version that 
-#requires some understanding of R to use
-#the Python version asks you if you have a header row, this version does not.
-  #please just include a header row, it makes everything work so much better
+#this code makes Anki flashcards from a csv input. See the ReadMe for a 
+#guide on how to use it
 
 #install.packages(dplyr) #do this if you have not installed dplyr 
 library(dplyr)
 
 ####---- edit this section---- 
-csvPath <- "C:/Users/kikir/OneDrive/Documents/R Studio Files and Projects/PlantID_List.csv"
 csvPath <- "C:/PathGoesHere/PlantID_List.csv"
   #remember to format this with forward slashes
   #In your csv, Family names must be formatted as Latinname (Common) or Latinname, 
@@ -36,7 +33,6 @@ TaxonomicTag <- "Plants::Vascular_Plants::Dicots::"
   #This is an optional field to add a tag to sort your flashcards by clade
   #remember that Anki tagging systems use the :: characters to denote subfolders
   #This applies as a character vector to all cards
-
 
 txtFileName <- "AnkiCardsTest1"
   #Choose a name for your output .txt file
@@ -117,38 +113,9 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
   return(outputfile)
 }
 
-
-#outputfile <- paste0(txtFileName, ".txt")
-
-
 outputfile <- paste0(txtFileName, ".txt")
 if(file.exists(outputfile)){
   stop("There is already a file with that name. Please select a different name or continue if you wish to overwrite the old file.")
 }
 
-
 TimeForSomeFlashcardMagic()
-
-
-#this below stuff is optional and doesn't currently work well. 
-#while(file.exists(outputfile)){
-#user_input <- readline(prompt = paste0("A file called " , outputfile, " already exists. \nDo you want to overwrite this file? (Y/N) "))
-#user_input <- toupper(user_input)
-
-#if(user_input == "N"){
-#oldtxtFileName <- txtFileName
-#repeat{
-#txtFileName <- readline(prompt = "Please enter a new filename now: ")
-#if(txtFileName == oldtxtFileName){
-#print("This is the same as the old filename. Please try again.")
-#}else{break
-
-
-#outputfile <- paste0(txtFileName, ".txt")
-
-#}else if(user_input == "Y"){
-#  print("File will be overwritten.")
-#  break
-
-  #}else{print("Invalid input")
-
