@@ -18,7 +18,7 @@ I wrote this code to help me learn the spellings of plant latin names, and also 
 ## [The Python Version](Python-Flashcard-Code)
 Please note that I learnt Python specifically for this project. It's almost definitely a mess, and there are probably more efficient ways to do this, but I don't really care and am not currently planning on updating the Python code. If you're trying to make sense of the Python code, my apologies in advance, and I can't help you because I no longer remember what I did. You're on your own. 
 
-## [The R Version](R-Flashcard-Code-Main.R)
+## [The R Version](R-Version/R-Flashcard-Code-Main.R)
 I have made a new version in R, and this is the version that I will continue to update because I actually use R consistently and understand its syntax better. In my experience, R is also used by many students in biology so people who would benefit from this project would be more likely to know how to run R code. See [this general guide](R-Version/README.md) for detailed information on how to format your data, and what the different variables mean. 
 Information on importing your cards to Anki will be added soon. 
 The R version is now fully functional. 
