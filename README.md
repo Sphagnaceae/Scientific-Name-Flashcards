@@ -20,5 +20,14 @@ There will eventually be a guide here on how to use the R version of the code if
 
 If you know how to run the python code, it is very user friendly, and will prompt you at each step. As far as I am aware, you shouldn't need to edit anything inside the code for it to work, all settings that you change are done by user input when prompted. 
 
+## Importing the cards to Anki
+Anki is a flashcard software that automatically schedules cards to be reviewed at different intervals depending on how difficult they are (based on your rating). It has a lot of very useful functions, including the typed answer format of cards. After you have run this code, you will have your card data in a .txt file, which you must now import to Anki:
+1. From the Anki main menu, go to File > Import, and select the text file.
+2. This will open the Import File menu, with many different settings. <b> If you are using the R version of the code, you should not have to change anything on this page except for the Deck </b>. These setting should be selected: Field separator is comma, Allow HTML in fields as True, Field mapping should map the labels, and Note Type should be Basic (type in the answer), although you can change it if you want.
+3. Select the Deck
+4. Import notes
+5. Return to the main menu, and try your flashcards!
+Here are some examples of how the completed flashcards look
+
 ## Feedback
 Any feedback on this project is greatly appreciated! I'm still learning how to use R and GitHub, so please let me know about errors that you notice.
