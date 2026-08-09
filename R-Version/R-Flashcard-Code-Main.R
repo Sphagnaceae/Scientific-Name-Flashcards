@@ -4,7 +4,7 @@
 library(dplyr)
 
 ####---- edit this section-----------------------------------------------
-csvPath <- "C:/Users/pathhere/PlantID_List.csv"
+csvPath <- "C:/Users/Pathhere/PlantID_List.csv"
   #remember to format this with forward slashes
 LinesToSkip <- 3
   #the number of lines to skip at the start of the spreadsheet. skip any blank rows. Do NOT skip headers. 
@@ -54,6 +54,8 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
                                       Family = FamilyCol, TaxoTag = TaxonomicTag){
   outputfile = paste0(output, ".txt")
   cat("", file = outputfile, append = FALSE)
+  cat("#separator:Comma\n#html:true\n#columns:Front,Back,Tags\n#notetype:Basic (type in the answer)\n#tags column:3\n", 
+      file = outputfile, fill = FALSE, append = TRUE, sep = "")
   rename(csv, "Family" = Family, "Latin" = Latin, "Common" = Common, "Lab" = Lab)
   for (row in 1:nrow(csv)){
     rowFamily <- csv$Family[row]
