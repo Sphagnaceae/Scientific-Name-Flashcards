@@ -1,6 +1,9 @@
 # Scientific-Name-Flashcards
 This code turns a spreadsheet (in csv form) into fill-in-the-blank Anki flashcards for learning species latin names, common names, family, and other information. This code could likely be adapted to make flashcards for many other apps too, since it creates a text file output. 
 
+[Here is an example of the input csv](/Example-Data/SamplePlantSpreadsheet.csv)  
+[Here is an example of the output text file](/Example-Data/SampleFlashcardOutput.txt) that is imported into Anki  
+
 ## Background
 I wrote this code to help me learn the spellings of plant latin names, and also match the latin names for each species to a common name and family. I initially wrote this in python and learned python for this project. It worked so well that I am uploading it so that other students may benefit, for plant ID courses or for any similar application requiring the memorization of scientific and common names. 
 
