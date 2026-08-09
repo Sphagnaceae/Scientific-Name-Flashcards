@@ -70,6 +70,6 @@ Good luck!
 * Return to the [general information ReadMe](../README.md) page
 * See [examples of flashcards](../Example-Data/ExampleFlashcards.md) made with the R code
 * See [other example data](../Example-Data), including an example of an input .csv, and the output .txt file
-* [The R version](R-Flashcard-Code.R), which is also above in this folder
+* [The R version](/R-Flashcard-Code-Main.R), which is also above in this folder
 * [The Python version](../Python-Flashcard-Code)
 
