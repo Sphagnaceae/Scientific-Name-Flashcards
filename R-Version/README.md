@@ -1,8 +1,10 @@
 # How to make flashcards (R Version)
+[Here is an example of the input csv](SamplePlantSpreadsheet.csv)
+[Here is an example of the output text file](SampleFlashcardOutput.txt) that is imported into Anki
 ## Formatting Input Data
 First, you'll need the information that you want to turn into flashcards. This must be in <b>csv</b> format, and <b> must be formatted properly, or it will not work. </b>
 
-I usually do this in Google Sheets, although you can use any spreadsheet software that allows you to export as a .csv file. I'll use this table of carnivorous plants as an example:
+I usually do this in Google Sheets, although you can use any spreadsheet software that allows you to export as a .csv file. I'll use [this table](SamplePlantSpreadsheet.csv) of carnivorous plants as an example:
 
 | Family | Latin name | Common name | Lab |
 | ------ | ---------- | ----------- | -----|
