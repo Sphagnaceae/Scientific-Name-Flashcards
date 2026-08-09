@@ -1,8 +1,16 @@
 # Scientific-Name-Flashcards
-This code turns a spreadsheet (in csv form) into fill-in-the-blank Anki flashcards for learning species latin names, common names, family, and other information. This code could likely be adapted to make flashcards for many other apps too, since it creates a text file output. 
+This code turns a spreadsheet (in csv form) into <b>fill-in-the-blank</b> Anki flashcards for learning species Latin names, common names, family, and other information. This code could likely be adapted work with many other flashcard apps, since it creates a .txt file output.
 
 [Here is an example of the input csv](/Example-Data/SamplePlantSpreadsheet.csv)  
 [Here is an example of the output text file](/Example-Data/SampleFlashcardOutput.txt) that is imported into Anki  
+
+Here are some images of the Anki flashcards made with this example data:
+<p align="center">
+  <img src="Example-Data/Card-Photos/Example4.png" alt="A flashcard that says What family is Triantha occidentalis? (LatinName). The correct user-inputted answer, Tofieldiaceae, is highlighted in green below." width="48%">  
+<img src="Example-Data/Card-Photos/Example6.png" alt="A flashcard that says, What family is Drosera anglica? (LatinName Common). The correct user-inputted answer, Droseraceae Sundew, is highlighted in green below." width="48%"> 
+  <img src="Example-Data/Card-Photos/Example5.png" alt="A flashcard that says, What is the Latin name of Slender-leaved sundew?. The correct user-inputted answer, Drosera linearis, is highlighted in green below." width="48%">  
+  <img src="Example-Data/Card-Photos/Example3.png" alt="The same flashcard with the inputted answer, Round-leaved sundew, highlighted green to indicate that it is correct" width="48%">  
+</p>
 
 ## Background
 I wrote this code to help me learn the spellings of plant latin names, and also match the latin names for each species to a common name and family. I initially wrote this in python and learned python for this project. It worked so well that I am uploading it so that other students may benefit, for plant ID courses or for any similar application requiring the memorization of scientific and common names. 
