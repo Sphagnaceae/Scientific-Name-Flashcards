@@ -128,27 +128,3 @@ if(file.exists(outputfile)){
 
 
 TimeForSomeFlashcardMagic()
-
-
-#this below stuff is optional and doesn't currently work well. 
-#while(file.exists(outputfile)){
-#user_input <- readline(prompt = paste0("A file called " , outputfile, " already exists. \nDo you want to overwrite this file? (Y/N) "))
-#user_input <- toupper(user_input)
-
-#if(user_input == "N"){
-#oldtxtFileName <- txtFileName
-#repeat{
-#txtFileName <- readline(prompt = "Please enter a new filename now: ")
-#if(txtFileName == oldtxtFileName){
-#print("This is the same as the old filename. Please try again.")
-#}else{break
-
-
-#outputfile <- paste0(txtFileName, ".txt")
-
-#}else if(user_input == "Y"){
-#  print("File will be overwritten.")
-#  break
-
-  #}else{print("Invalid input")
-
