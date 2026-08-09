@@ -1,4 +1,4 @@
-# Scientific-Name-Flashcards
+# Scientific Name Flashcards
 This code turns a spreadsheet (in csv form) into <b>fill-in-the-blank</b> Anki flashcards for learning species Latin names, common names, family, and other information. This code could likely be adapted work with many other flashcard apps, since it creates a .txt file output.
 
 [Here is an example of the input csv](/Example-Data/SamplePlantSpreadsheet.csv)  
