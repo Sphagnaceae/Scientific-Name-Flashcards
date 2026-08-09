@@ -1,0 +1,23 @@
+#separator:Comma
+#html:true
+#columns:Front,Back,Tags
+#notetype:Basic (type in the answer)
+#tags column:3
+What <b>family</b> is <i>Drosera anglica</i>?<br>(LatinName Common),Droseraceae Sundew,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What is the <b>common name</b> of <i>Drosera anglica</i>?,English sundew,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What is the <b>Latin name</b> of English sundew?,</i>Drosera anglica</i>,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What <b>family</b> is <i>Drosera rotundifolia</i>?<br>(LatinName Common),Droseraceae Sundew,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What is the <b>common name</b> of <i>Drosera rotundifolia</i>?,Round-leaved sundew,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What is the <b>Latin name</b> of Round-leaved sundew?,</i>Drosera rotundifolia</i>,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What <b>family</b> is <i>Drosera linearis</i>?<br>(LatinName Common),Droseraceae Sundew,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What is the <b>common name</b> of <i>Drosera linearis</i>?,Slender-leaved sundew,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What is the <b>Latin name</b> of Slender-leaved sundew?,</i>Drosera linearis</i>,Plants::Vascular_Plants::Droseraceae BIO101::Lab_2
+What <b>family</b> is <i>Pinguicula vulgaris</i>?<br>(LatinName),Lentibulariaceae,Plants::Vascular_Plants::Lentibulariaceae BIO101::Lab_3
+What is the <b>common name</b> of <i>Pinguicula vulgaris</i>?,Common butterwort,Plants::Vascular_Plants::Lentibulariaceae BIO101::Lab_3
+What is the <b>Latin name</b> of Common butterwort?,</i>Pinguicula vulgaris</i>,Plants::Vascular_Plants::Lentibulariaceae BIO101::Lab_3
+What <b>family</b> is <i>Pinguicula villosa</i>?<br>(LatinName),Lentibulariaceae,Plants::Vascular_Plants::Lentibulariaceae BIO101::Lab_3
+What is the <b>common name</b> of <i>Pinguicula villosa</i>?,Hairy butterwort,Plants::Vascular_Plants::Lentibulariaceae BIO101::Lab_3
+What is the <b>Latin name</b> of Hairy butterwort?,</i>Pinguicula villosa</i>,Plants::Vascular_Plants::Lentibulariaceae BIO101::Lab_3
+What <b>family</b> is <i>Triantha occidentalis</i>?<br>(LatinName),Tofieldiaceae,Plants::Vascular_Plants::Tofieldiaceae BIO101::Lab_3
+What is the <b>common name</b> of <i>Triantha occidentalis</i>?,Western false asphodel,Plants::Vascular_Plants::Tofieldiaceae BIO101::Lab_3
+What is the <b>Latin name</b> of Western false asphodel?,</i>Triantha occidentalis</i>,Plants::Vascular_Plants::Tofieldiaceae BIO101::Lab_3

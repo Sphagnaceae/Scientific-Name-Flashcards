@@ -4,13 +4,13 @@
 library(dplyr)
 
 ####---- edit this section-----------------------------------------------
-csvPath <- "C:/Users/Pathhere/PlantID_List.csv"
+csvPath <- "C:/PathHere/Scientific-Name-Flashcards/SamplePlantSpreadsheet.csv"
   #remember to format this with forward slashes
-LinesToSkip <- 3
+LinesToSkip <- 0
   #the number of lines to skip at the start of the spreadsheet. skip any blank rows. Do NOT skip headers. 
 FamilyCol <- "Family"
   #the name of your column with family names
-CommonNameCol <- "Common Name"
+CommonNameCol <- "Common name"
 LatinNameCol <- "Latin name"
   #the names of your columns with the latin names and common names
 LabCol <- "Lab"
@@ -24,12 +24,12 @@ CourseNameTag <- "BIO101::Lab_"
   #Remember that Anki tags use :: notation to do subtags 
   #If you do not want a course tag, please leave this field blank 
 
-TaxonomicTag <- "Plants::Vascular_Plants::Dicots::"
+TaxonomicTag <- "Plants::Vascular_Plants::"
   #This is an optional field to add a tag to sort your flashcards by clade
   #remember that Anki tagging systems use the :: characters to denote subfolders
   #This applies as a character vector to all cards, and will be followed by the latin family of that card.
 
-txtFileName <- "AnkiCardsTest1"
+txtFileName <- "SampleFlashcardOutput"
   #Choose a name for your output .txt file
 ####--------------------------------------------------------------------------
 
@@ -86,6 +86,7 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
           file = outputfile, fill = FALSE, append = TRUE, sep = "")
       
     }else{family_latin <- rowFamily
+      message(rowLatin)
       cat("What <b>family</b> is <i>", rowLatin, "</i>?<br>(LatinName),", 
         family_latin, ",", TaxoTag, 
         family_latin, " ", Course, rowLab, "\n",
