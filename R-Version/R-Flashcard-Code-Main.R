@@ -4,7 +4,7 @@
 library(dplyr)
 
 ####---- edit this section-----------------------------------------------
-csvPath <- "C:/PathGoesHere/PlantID_List.csv"
+csvPath <- "C:/Users/pathhere/PlantID_List.csv"
   #remember to format this with forward slashes
 LinesToSkip <- 3
   #the number of lines to skip at the start of the spreadsheet. skip any blank rows. Do NOT skip headers. 
@@ -53,11 +53,13 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
                                       Lab = LabCol, Course = CourseNameTag,
                                       Family = FamilyCol, TaxoTag = TaxonomicTag){
   outputfile = paste0(output, ".txt")
+  cat("", file = outputfile, append = FALSE)
   rename(csv, "Family" = Family, "Latin" = Latin, "Common" = Common, "Lab" = Lab)
   for (row in 1:nrow(csv)){
     rowFamily <- csv$Family[row]
     rowLatin <- csv$Latin[row]
     rowCommon <- csv$Common[row]
+    rowLab <- csv$Lab[row]
     
     is_family_common <- grepl(x = rowFamily, pattern = " ")
 
@@ -78,13 +80,13 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
       
       cat("What <b>family</b> is <i>", rowLatin, "</i>?<br>(LatinName Common),", 
           family_latin, " ", family_common, ",", TaxoTag, 
-          family_latin, " ", Course, Lab, "\n",
+          family_latin, " ", Course, rowLab, "\n",
           file = outputfile, fill = FALSE, append = TRUE, sep = "")
       
     }else{family_latin <- rowFamily
       cat("What <b>family</b> is <i>", rowLatin, "</i>?<br>(LatinName),", 
         family_latin, ",", TaxoTag, 
-        family_latin, " ", Course, Lab, "\n",
+        family_latin, " ", Course, rowLab, "\n",
         file = outputfile, fill = FALSE, append = TRUE, sep = "")
       #The above section allows you to make flashcards for species without parenthetical 
         #common names for families (e.g. just as Amaranthaceae instead of 
@@ -100,10 +102,10 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
           #all code between lines 102 and 107. 
     
     cat("What is the <b>common name</b> of <i>", rowLatin, "</i>?,", rowCommon, ",", 
-        TaxoTag, family_latin, " ", Course, Lab, "\n",
+        TaxoTag, family_latin, " ", Course, rowLab, "\n",
         file = outputfile, fill = FALSE, append = TRUE, sep = "")
     cat("What is the <b>Latin name</b> of ", rowCommon, "?,</i>", rowLatin, "</i>,", 
-        TaxoTag, family_latin, " ", Course, Lab, "\n",
+        TaxoTag, family_latin, " ", Course, rowLab, "\n",
         file = outputfile, fill = FALSE, append = TRUE, sep = "")
   }
   return(outputfile)
