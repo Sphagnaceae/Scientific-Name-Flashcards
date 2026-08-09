@@ -65,3 +65,11 @@ If you do not want to use this, set it to blank:
 There are notes throughout the code on what to edit if you want to change how the code works. For example, it tells you which chunk to delete to run it without common species names. It also includes some information on how to identify and fix bugs that could arise from weird header names. 
 
 Good luck!
+
+## Links
+* Return to the [general information ReadMe](../README.md) page
+* See [examples of flashcards](../Example-Data/ExampleFlashcards.md) made with the R code
+* See [other example data](../Example-Data), including an example of an input .csv, and the output .txt file
+* [The R version](R-Flashcard-Code.R), which is also above in this folder
+* [The Python version](../Python-Flashcard-Code)
+
