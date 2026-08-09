@@ -10,6 +10,7 @@ Please note that I learnt Python specifically for this project. It's almost defi
 ## [The R Version](R-Flashcard-Code-Main.R)
 I have made a new version in R, and this is the version that I will continue to update because I actually use R consistently and understand its syntax better. In my experience, R is also used by many students in biology so people who would benefit from this project would be more likely to know how to run R code. See [this guide](R-Version/README.md) for detailed information on how to format your data, and what the different variables mean. 
 Information on importing your cards to Anki will be added soon. 
+The R version is now fully functional. 
 
 ## For Absolute Beginners
 There will eventually be a guide here on how to use the R version of the code if you are an absolute beginner. One of the issues that I ran into while making this project was that I knew what my code needed to do, and I knew that there were likely other poeple who had done similar things, but even if I had found a project for this exact purpose, I wouldn't have known how to run their code. In the meantime, [the general guide should help](R-Version/README.md)
