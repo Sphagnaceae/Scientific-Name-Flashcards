@@ -58,10 +58,10 @@ TimeForSomeFlashcardMagic <- function(input = csv, output = txtFileName,
       file = outputfile, fill = FALSE, append = TRUE, sep = "")
   rename(csv, "Family" = Family, "Latin" = Latin, "Common" = Common, "Lab" = Lab)
   for (row in 1:nrow(csv)){
-    rowFamily <- csv$Family[row]
-    rowLatin <- csv$Latin[row]
-    rowCommon <- csv$Common[row]
-    rowLab <- csv$Lab[row]
+    rowFamily <- csv[row, Family]
+    rowLatin <- csv[row, Latin]
+    rowCommon <- csv[row, Common]
+    rowLab <- csv[row, Lab]
     
     is_family_common <- grepl(x = rowFamily, pattern = " ")
 
