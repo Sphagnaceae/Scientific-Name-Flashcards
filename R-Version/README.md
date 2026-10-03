@@ -62,7 +62,10 @@ If you do not want to use this, set it to blank:
 ```LinesToSkip<- 0```  
 
 ## Options
-There are notes throughout the code on what to edit if you want to change how the code works. For example, it tells you which chunk to delete to run it without common species names. It also includes some information on how to identify and fix bugs that could arise from weird header names. 
+There are notes throughout the code on what to edit if you want to change how the code works. For example, it tells you which chunk to delete to run it without common species names. It also includes some information on how to identify and fix bugs that could arise from weird header names.
+
+I made a [different version](R-Flashcard-Code-Taxonomic-Levels.R) of this code that creates cards for higher taxonomic levels, including kingdom, phylum and order by default. It could be easily modified to create cards for other levels, like class. This code was made for studying the taxonomy of plant pathogens, which come from various different kingdoms, so the simple family classifications of the main code did not suffice. Unlike the main code, this one cannot recognize parenthetical common names (i.e. if given "Amaranthaceae (Amaranth)", it will not parse the Latin and Common names). 
+
 
 Good luck!
 
@@ -71,5 +74,6 @@ Good luck!
 * See [examples of flashcards](../Example-Data/ExampleFlashcards.md) made with the R code
 * See [other example data](../Example-Data), including an example of an input .csv, and the output .txt file
 * [The R version](R-Flashcard-Code-Main.R), which is also above in this folder
+* [The R version optimized for studying multiple taxonomic levels at once](R-Flashcard-Code-Taxonomic-Levels.R)
 * [The Python version](../Python-Flashcard-Code)
 
